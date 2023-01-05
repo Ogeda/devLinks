@@ -11,15 +11,14 @@ body {
 }
 
 body * {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   color: #fff;
 }
 
 #container {
   width: 360px;
-  margin: auto;
-  /* border: 1px solid red; */
-  margin-top: 56px;
+  margin: 56px auto 0;
+  padding: 0 24px;
 }
 
 #profile {
@@ -62,5 +61,13 @@ ul li a {
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
 
+  font-weight: 500;
 
+  transition: background 0.2s;
+}
+
+/* pseudo-selector */
+ul li a:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1.5px solid #fff;
 }
